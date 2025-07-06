@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Suivi Semaine Sport & Compléments</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0 15px;
+        }
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .day {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+        .day h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin: 5px 0;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            border: none;
+            background-color: #007BFF;
+            color: white;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Suivi Hebdo – Semaine 1</h1>
+
+    <div class="day"><h2>Lundi</h2><p><strong>Séance :</strong> 🏋️‍♂️ Haut du corps (supersets)</p><label><input type="checkbox"> Séance effectuée</label><p><strong>Compléments :</strong></p><label><input type="checkbox"> Créatine</label><label><input type="checkbox"> Whey</label><label><input type="checkbox"> Oméga 3</label></div><div class="day"><h2>Mardi</h2><p><strong>Séance :</strong> 💪 Dos/Biceps/Rappel pecs</p><label><input type="checkbox"> Séance effectuée</label><p><strong>Compléments :</strong></p><label><input type="checkbox"> Créatine</label><label><input type="checkbox"> Whey</label></div><div class="day"><h2>Mercredi</h2><p><strong>Séance :</strong> 🏃‍♂️ Endurance footing</p><label><input type="checkbox"> Séance effectuée</label><p><strong>Compléments :</strong></p><label><input type="checkbox"> Oméga 3</label></div><div class="day"><h2>Jeudi</h2><p><strong>Séance :</strong> 💪 Haut du corps (supersets - copie lundi)</p><label><input type="checkbox"> Séance effectuée</label><p><strong>Compléments :</strong></p><label><input type="checkbox"> Créatine</label><label><input type="checkbox"> Multivitamines</label></div><div class="day"><h2>Vendredi</h2><p><strong>Séance :</strong> 💪 Dos/Biceps/Rappel pecs</p><label><input type="checkbox"> Séance effectuée</label><p><strong>Compléments :</strong></p><label><input type="checkbox"> Créatine</label><label><input type="checkbox"> Whey</label></div><div class="day"><h2>Samedi</h2><p><strong>Séance :</strong> 🔥 Grosse sortie Trail ou repos</p><label><input type="checkbox"> Séance effectuée</label><p><strong>Compléments :</strong></p><label><input type="checkbox"> Oméga 3</label><label><input type="checkbox"> Multivitamines</label></div><div class="day"><h2>Dimanche</h2><p><strong>Séance :</strong> 🧘‍♂️ Repos ou séance libre</p><label><input type="checkbox"> Séance effectuée</label><p><strong>Compléments :</strong></p><label><input type="checkbox"> Whey</label><label><input type="checkbox"> Vitamine D</label></div>
+
+    <div style="text-align:center;">
+        <button onclick="resetCheckboxes()">🔁 Réinitialiser la semaine</button>
+    </div>
+
+    <script>
+        function resetCheckboxes() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(cb => cb.checked = false);
+        }
+    </script>
+</body>
+</html>
