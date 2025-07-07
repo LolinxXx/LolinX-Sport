@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>V6.1 – FINAL FULL</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Rajdhani', sans-serif;
+      background: linear-gradient(to right, #1b264f, #3b1e5e);
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: rgba(0,0,0,0.2);
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+    nav {
+      display: flex;
+      overflow-x: auto;
+      background: #2d2a4a;
+    }
+    nav button {
+      flex: 1;
+      padding: 1rem;
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+    }
+    nav button.active {
+      border-bottom: 3px solid #f1c40f;
+    }
+    section {
+      display: none;
+      padding: 1.5rem;
+    }
+    section.active {
+      display: block;
+    }
+    .exercise {
+      background: rgba(255,255,255,0.05);
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+    }
+    input[type="number"], input[type="text"], input[type="date"] {
+      width: 70px;
+      margin: 0.3rem;
+      padding: 0.3rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 5px;
+    }
+    .superset-title {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #00ffff;
+    }
+    .save-btn {
+      margin-top: 1rem;
+      background: #27ae60;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>Suivi d'entraînement – V6.1</header>
+  <nav id="tabs">
+    <button onclick="showTab('lundi')" class="active">Lundi</button>
+    <button onclick="showTab('mardi')">Mardi</button>
+    <button onclick="showTab('mercredi')">Mercredi</button>
+    <button onclick="showTab('jeudi')">Jeudi</button>
+    <button onclick="showTab('vendredi')">Vendredi</button>
+    <button onclick="showTab('weekend')">Week-end</button>
+    <button onclick="showTab('bilan')">Stats</button>
+  </nav>
+
+  <section id="lundi" class="active">
+    <h2>🔹 Lundi – Pecs, épaules, triceps</h2>
+    <label>Date : <input type="date" id="date-lundi"></label>
+
+    <div class="exercise">
+      <div class="superset-title">SUPERSET 1 – Développé couché haltères + Élévations latérales</div>
+      Round 1 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 2 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 3 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 4 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps">
+    </div>
+
+    <div class="exercise">
+      <div class="superset-title">SUPERSET 2 – Dév. incliné haltères + Extension triceps corde</div>
+      Round 1 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 2 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 3 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps">
+    </div>
+
+    <div class="exercise">
+      <div class="superset-title">SUPERSET 3 – Élévations frontales + Dips</div>
+      Round 1 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 2 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 3 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps">
+    </div>
+
+    <div class="exercise">
+      <div class="superset-title">FINISHER – Pompes tempo + Drop set épaules</div>
+      Round 1 : <input type="text" placeholder="✅ / ❌"> / <input type="number" placeholder="kg"><br>
+      Round 2 : <input type="text" placeholder="✅ / ❌"> / <input type="number" placeholder="kg"><br>
+      Round 3 : <input type="text" placeholder="✅ / ❌"> / <input type="number" placeholder="kg">
+    </div>
+
+    <button class="save-btn" onclick="alert('Séance enregistrée !')">💾 Enregistrer</button>
+  </section>
+
+  <section id="mardi"class="active">
+    <h2>🔹 Mardi – Dos, biceps, pecs</h2>
+   triceps</h2>
+    <label>Date : <input type="date" id="date-lundi"></label>
+
+    <div class="exercise">
+      <div class="superset-title">SUPERSET 1 – Développé couché haltères + Élévations latérales</div>
+      Round 1 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 2 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 3 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 4 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps">
+    </div>
+
+    <div class="exercise">
+      <div class="superset-title">SUPERSET 2 – Dév. incliné haltères + Extension triceps corde</div>
+      Round 1 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 2 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 3 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps">
+    </div>
+
+    <div class="exercise">
+      <div class="superset-title">SUPERSET 3 – Élévations frontales + Dips</div>
+      Round 1 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 2 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps"><br>
+      Round 3 : <input type="number" placeholder="kg"> / <input type="number" placeholder="reps">
+    </div>
+
+    <div class="exercise">
+      <div class="superset-title">FINISHER – Pompes tempo + Drop set épaules</div>
+      Round 1 : <input type="text" placeholder="✅ / ❌"> / <input type="number" placeholder="kg"><br>
+      Round 2 : <input type="text" placeholder="✅ / ❌"> / <input type="number" placeholder="kg"><br>
+      Round 3 : <input type="text" placeholder="✅ / ❌"> / <input type="number" placeholder="kg">
+    </div>
+
+    <button class="save-btn" onclick="alert('Séance enregistrée !')">💾 Enregistrer</button>
+  </section>
+
+  <section id="mercredi">
+    <h2>😴 Repos</h2>
+  </section>
+
+  <section id="jeudi">
+    <h2>🔹 Jeudi – Pecs, épaules, triceps</h2>
+    <p>(Même format que lundi)</p>
+  </section>
+
+  <section id="vendredi">
+    <h2>🔹 Vendredi – Dos, biceps, pecs</h2>
+    <p>(Même format que mardi)</p>
+  </section>
+
+  <section id="weekend">
+    <h2>🏃‍♂️ Week-end – Course longue</h2>
+    <button onclick="alert('Course cochée ✅')">✅ Séance faite</button>
+  </section>
+
+  <section id="bilan">
+    <h2>📊 Bilan & Stats</h2>
+    <p>Compléments pris, séances cochées, etc. (à développer)</p>
+  </section>
+
+  <script>
+    function showTab(id) {
+      document.querySelectorAll("nav button").forEach(btn => btn.classList.remove("active"));
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.querySelector("button[onclick='showTab("" + id + "")']").classList.add("active");
+      document.getElementById(id).classList.add("active");
+    }
+  </script>
+</body>
+</html>
